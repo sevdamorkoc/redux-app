@@ -1,0 +1,105 @@
+:root {
+  --primary-pink: #FF69B4;
+  --secondary-pink: #FFB6C1;
+  --primary-purple: #9370DB;
+  --secondary-purple: #E6E6FA;
+  --dark-purple: #483D8B;
+  --text-light: #FFFFFF;
+  --text-dark: #2D2D2D;
+}
+
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, var(--secondary-pink) 0%, var(--secondary-purple) 100%);
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  filter: drop-shadow(0 0 10px var(--primary-purple));
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background: linear-gradient(45deg, var(--primary-purple) 0%, var(--primary-pink) 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--text-light);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.App-link {
+  color: var(--secondary-pink);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: var(--primary-pink);
+  text-shadow: 0 0 5px rgba(255, 105, 180, 0.3);
+}
+
+/* Add some modern components styling */
+.button {
+  background: var(--primary-pink);
+  color: var(--text-light);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background: var(--primary-purple);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.input-field {
+  border: 2px solid var(--secondary-purple);
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: var(--primary-pink);
+  box-shadow: 0 0 10px rgba(147, 112, 219, 0.2);
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
